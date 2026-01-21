@@ -1,0 +1,14 @@
+{
+  "functions": {
+    "api/telegram/send-message.js": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/telegram/send-message",
+      "destination": "/api/telegram/send-message.js"
+    }
+  ]
+}
+

@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+Disallow: /documentation/
+Disallow: /signin/
+Disallow: /signup/
+
+Sitemap: https://sonkusareclasses.in/sitemap.xml
