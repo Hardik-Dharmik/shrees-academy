@@ -212,7 +212,7 @@ export async function generateStaticParams() {
     }))
 }
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://sonkusareclasses.in';
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://shreeacademy.in';
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {

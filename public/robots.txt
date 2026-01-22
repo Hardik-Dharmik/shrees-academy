@@ -7,4 +7,4 @@ Disallow: /documentation/
 Disallow: /signin/
 Disallow: /signup/
 
-Sitemap: https://sonkusareclasses.in/sitemap.xml
+Sitemap: https://shreeacademy.in/sitemap.xml
