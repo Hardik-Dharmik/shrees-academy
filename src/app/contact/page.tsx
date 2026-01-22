@@ -127,7 +127,7 @@ const ContactUs = () => {
 
                     <div className="max-w-6xl mx-auto rounded-3xl overflow-hidden shadow-2xl border">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.8272193277053!2d79.1488565744999!3d21.158478983312072"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.6189070169016!2d79.12990137450015!3d21.168048382981468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c7e081eec2e7%3A0x6efc8440ac253317!2sWisdom%20Quality%20Education!5e1!3m2!1sen!2sin!4v1769085620597!5m2!1sen!2sin"
                             width="100%"
                             height="550"
                             loading="lazy"
