@@ -190,7 +190,7 @@ const Courses = () => {
             <section className="py-24 bg-primary text-white">
                 <div className="max-w-4xl mx-auto px-4 text-center">
                     <Icon icon="mdi:account-question-outline" className="text-5xl mx-auto mb-6" />
-                    <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                    <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
                         Not Sure Which Course to Choose?
                     </h2>
                     <p className="text-lg text-white/90 mb-10">

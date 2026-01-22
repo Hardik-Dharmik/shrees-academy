@@ -48,7 +48,7 @@ const Footer = () => {
                         <div className="flex gap-3">
                             {[
                                 { icon: 'mdi:instagram', href: 'https://www.instagram.com/shreeswisdomsacademy/', color: 'hover:text-pink-400' },
-                                { icon: 'mdi:whatsapp', href: 'https://wa.me/919372016215', color: 'hover:text-green-400' },
+                                { icon: 'mdi:whatsapp', href: 'https://wa.me/918446425052?text=Hello%20Shree%20Wisdoms%20Academy%2C%20I%20would%20like%20to%20know%20more%20about%20your%20courses.', color: 'hover:text-green-400' },
                                 { icon: 'mdi:youtube', href: 'https://www.youtube.com', color: 'hover:text-red-500' },
                                 { icon: 'mdi:facebook', href: 'https://www.facebook.com', color: 'hover:text-blue-500' }
                             ].map((item, i) => (
@@ -98,23 +98,23 @@ const Footer = () => {
                         </h4>
                         <ul className="space-y-3 text-gray-400">
                             <li className="flex items-center gap-3">
-                                <Icon icon="mdi:book-open-page-variant" className="text-primary text-lg" />
+                                <Icon icon="mdi:book-open-page-variant" className="text-white text-lg" />
                                 <span>Board Exam Coaching</span>
                             </li>
                             <li className="flex items-center gap-3">
-                                <Icon icon="mdi:target" className="text-primary text-lg" />
+                                <Icon icon="mdi:target" className="text-white text-lg" />
                                 <span>JEE/NEET Preparation</span>
                             </li>
                             <li className="flex items-center gap-3">
-                                <Icon icon="mdi:school" className="text-primary text-lg" />
+                                <Icon icon="mdi:school" className="text-white text-lg" />
                                 <span>MHTCET Training</span>
                             </li>
                             <li className="flex items-center gap-3">
-                                <Icon icon="mdi:account-group" className="text-primary text-lg" />
+                                <Icon icon="mdi:account-group" className="text-white text-lg" />
                                 <span>Personalized Mentoring</span>
                             </li>
                             <li className="flex items-center gap-3">
-                                <Icon icon="mdi:test-tube" className="text-primary text-lg" />
+                                <Icon icon="mdi:test-tube" className="text-white text-lg" />
                                 <span>Mock Tests & Analysis</span>
                             </li>
                         </ul>
@@ -130,20 +130,20 @@ const Footer = () => {
                         {/* Contact Info */}
                         <div className="space-y-4 mb-6">
                             <div className="flex gap-3">
-                                <Icon icon="mdi:map-marker" className="text-primary text-xl flex-shrink-0 mt-1" />
+                                <Icon icon="mdi:map-marker" className="text-white text-xl flex-shrink-0 mt-1" />
                                 <div className="text-sm text-gray-400">
                                     <p>Opposite Nikalas Mandir, Itwari, Nagpur, Maharashtra.</p>
                                 </div>
                             </div>
                             <div className="flex gap-3">
-                                <Icon icon="mdi:map-marker" className="text-primary text-xl flex-shrink-0 mt-1" />
+                                <Icon icon="mdi:map-marker" className="text-white text-xl flex-shrink-0 mt-1" />
                                 <div className="text-sm text-gray-400">
                                     <p>Near Railway Crossing, Namdev Nagar, Binaki, Nagpur, Maharashtra.</p>
                                 </div>
                             </div>
 
                             <div className="flex gap-3">
-                                <Icon icon="mdi:phone" className="text-primary text-xl flex-shrink-0" />
+                                <Icon icon="mdi:phone" className="text-white text-xl flex-shrink-0" />
                                 <div className="text-sm text-gray-400 space-y-1">
                                     <a href="tel:+919372016215" className="block hover:text-primary transition">
                                         +91 9823225787
@@ -155,7 +155,7 @@ const Footer = () => {
                             </div>
 
                             <div className="flex gap-3">
-                                <Icon icon="mdi:email" className="text-primary text-xl flex-shrink-0" />
+                                <Icon icon="mdi:email" className="text-white text-xl flex-shrink-0" />
                                 <a
                                     href="mailto:sonkusareclasses@gmail.com"
                                     className="text-sm text-gray-400 hover:text-primary transition break-all"

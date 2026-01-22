@@ -94,7 +94,7 @@ const Header: React.FC = () => {
                                         />
                                     </a>
                                     <a
-                                        href="https://wa.me/919372016215"
+                                        href="https://wa.me/918446425052?text=Hello%20Shree%20Wisdoms%20Academy%2C%20I%20would%20like%20to%20know%20more%20about%20your%20courses."
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className='w-9 h-9 rounded-lg bg-gradient-to-br from-primary/10 to-primary/5 hover:from-primary hover:to-primary/90 flex items-center justify-center transition-all duration-300 group shadow-sm hover:shadow-md hover:scale-110'
@@ -201,7 +201,7 @@ const Header: React.FC = () => {
                                         />
                                     </a>
                                     <a
-                                        href="https://wa.me/919372016215"
+                                        href="https://wa.me/918446425052?text=Hello%20Shree%20Wisdoms%20Academy%2C%20I%20would%20like%20to%20know%20more%20about%20your%20courses."
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className='w-11 h-11 rounded-lg bg-gradient-to-br from-primary/10 to-primary/5 hover:from-primary hover:to-primary/90 flex items-center justify-center transition-all duration-300 group shadow-sm hover:shadow-md hover:scale-110'
