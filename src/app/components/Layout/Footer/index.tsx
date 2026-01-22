@@ -17,141 +17,197 @@ const Footer = () => {
     }, [])
 
     return (
-        <footer className="bg-gray-950 text-gray-300">
-
-            {/* TOP COLOR BAND */}
-            <div className="bg-primary">
-                <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
-                    <Image
-                        src={withBasePath('/images/logo/logo.png')}
-                        alt="Shree's Academy"
-                        width={150}
-                        height={60}
-                        className="h-12 w-auto"
-                    />
-
-                    <div className="flex gap-3">
-                        {[
-                            { icon: 'mdi:instagram', href: 'https://www.instagram.com/wisdomqualityeducation_/' },
-                            { icon: 'mdi:whatsapp', href: 'https://wa.me/919372016215' },
-                            { icon: 'mdi:youtube', href: 'https://www.youtube.com' },
-                            { icon: 'mdi:facebook', href: 'https://www.facebook.com' }
-                        ].map((item, i) => (
-                            <a
-                                key={i}
-                                href={item.href}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="w-10 h-10 rounded-full bg-white/20 hover:bg-white text-white hover:text-primary flex items-center justify-center transition"
-                            >
-                                <Icon icon={item.icon} className="text-xl" />
-                            </a>
-                        ))}
-                    </div>
-                </div>
+        <footer className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-300 overflow-hidden">
+            {/* Background Pattern */}
+            <div className="absolute inset-0 opacity-5">
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.15)_1px,transparent_0)] bg-[length:20px_20px]"></div>
             </div>
 
-            {/* MAIN FOOTER CONTENT */}
-            <div className="max-w-7xl mx-auto px-4 py-16">
+            {/* Main Footer Content */}
+            <div className="relative max-w-7xl mx-auto px-4 py-16">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
 
-                    {/* About */}
-                    <div>
-                        <h4 className="text-white font-semibold mb-4">
-                            About Shree's Academy
-                        </h4>
-                        <p className="text-sm text-gray-400 leading-relaxed">
-                            Dedicated coaching institute providing quality education
-                            for Boards, JEE, NEET & MHTCET with a strong focus on results
-                            and personal attention.
-                        </p>
+                    {/* Brand Section */}
+                    <div className="lg:col-span-1">
+                        <div className="mb-6">
+                            <Image
+                                src={withBasePath('/images/logo/logo.png')}
+                                alt="Shree's Academy"
+                                width={180}
+                                height={72}
+                                className="h-14 w-auto mb-4"
+                            />
+                            <p className="text-gray-400 leading-relaxed text-sm">
+                                Empowering students to achieve excellence in competitive exams through
+                                personalized coaching, innovative teaching methods, and unwavering commitment
+                                to academic success.
+                            </p>
+                        </div>
+
+                        {/* Social Media */}
+                        <div className="flex gap-3">
+                            {[
+                                { icon: 'mdi:instagram', href: 'https://www.instagram.com/wisdomqualityeducation_/', color: 'hover:text-pink-400' },
+                                { icon: 'mdi:whatsapp', href: 'https://wa.me/919372016215', color: 'hover:text-green-400' },
+                                { icon: 'mdi:youtube', href: 'https://www.youtube.com', color: 'hover:text-red-500' },
+                                { icon: 'mdi:facebook', href: 'https://www.facebook.com', color: 'hover:text-blue-500' }
+                            ].map((item, i) => (
+                                <a
+                                    key={i}
+                                    href={item.href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className={`w-12 h-12 rounded-full bg-gray-800 hover:bg-gray-700 border border-gray-700 flex items-center justify-center transition-all duration-300 transform hover:scale-110 ${item.color}`}
+                                >
+                                    <Icon icon={item.icon} className="text-xl" />
+                                </a>
+                            ))}
+                        </div>
                     </div>
 
-                    {/* Links */}
-                    {footerLinks
-                        .filter(section => section.section !== 'Support')
-                        .slice(0, 2)
-                        .map((section, i) => (
-                            <div key={i}>
-                                <h4 className="text-white font-semibold mb-4">
-                                    {section.section}
-                                </h4>
-                                <ul className="space-y-3 text-sm">
-                                    {section.links.map((link, j) => (
-                                        <li key={j}>
-                                            <Link
-                                                href={link.href}
-                                                scroll={link.href !== '/'}
-                                                className="hover:text-primary transition flex items-center gap-2"
-                                            >
-                                                <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-                                                {link.label}
-                                            </Link>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        ))}
-
-                    {/* Contact */}
+                    {/* Quick Links */}
                     <div>
-                        <h4 className="text-white font-semibold mb-4">
-                            Contact Details
+                        <h4 className="text-white font-bold text-lg mb-6 relative">
+                            Quick Links
+                            <span className="absolute bottom-0 left-0 w-8 h-0.5 bg-primary"></span>
+                        </h4>
+                        <ul className="space-y-3">
+                            {footerLinks
+                                .find(section => section.section === 'Coaching Centre')
+                                ?.links.slice(0, 6)
+                                .map((link, j) => (
+                                    <li key={j}>
+                                        <Link
+                                            href={link.href}
+                                            scroll={link.href !== '/'}
+                                            className="text-gray-400 hover:text-primary transition-all duration-300 flex items-center gap-3 group"
+                                        >
+                                            <span className="w-1.5 h-1.5 rounded-full bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                                            <span className="group-hover:translate-x-1 transition-transform">{link.label}</span>
+                                        </Link>
+                                    </li>
+                                ))}
+                        </ul>
+                    </div>
+
+                    {/* Services */}
+                    <div>
+                        <h4 className="text-white font-bold text-lg mb-6 relative">
+                            Our Services
+                            <span className="absolute bottom-0 left-0 w-8 h-0.5 bg-primary"></span>
+                        </h4>
+                        <ul className="space-y-3 text-gray-400">
+                            <li className="flex items-center gap-3">
+                                <Icon icon="mdi:book-open-page-variant" className="text-primary text-lg" />
+                                <span>Board Exam Coaching</span>
+                            </li>
+                            <li className="flex items-center gap-3">
+                                <Icon icon="mdi:target" className="text-primary text-lg" />
+                                <span>JEE/NEET Preparation</span>
+                            </li>
+                            <li className="flex items-center gap-3">
+                                <Icon icon="mdi:school" className="text-primary text-lg" />
+                                <span>MHTCET Training</span>
+                            </li>
+                            <li className="flex items-center gap-3">
+                                <Icon icon="mdi:account-group" className="text-primary text-lg" />
+                                <span>Personalized Mentoring</span>
+                            </li>
+                            <li className="flex items-center gap-3">
+                                <Icon icon="mdi:test-tube" className="text-primary text-lg" />
+                                <span>Mock Tests & Analysis</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    {/* Contact & Newsletter */}
+                    <div>
+                        <h4 className="text-white font-bold text-lg mb-6 relative">
+                            Get In Touch
+                            <span className="absolute bottom-0 left-0 w-8 h-0.5 bg-primary"></span>
                         </h4>
 
-                        <div className="space-y-4 text-sm">
+                        {/* Contact Info */}
+                        <div className="space-y-4 mb-6">
                             <div className="flex gap-3">
-                                <Icon icon="mdi:map-marker" className="text-primary text-xl" />
-                                <p className="text-gray-400 leading-relaxed">
-                                    Minimata Nagar, Janki Nagar, Nagpur <br />
-                                    Bhandewadi Road, Pardi <br />
-                                    Netaji Nagar, Nagpur
-                                </p>
+                                <Icon icon="mdi:map-marker" className="text-primary text-xl flex-shrink-0 mt-1" />
+                                <div className="text-sm text-gray-400">
+                                    <p>Minimata Nagar, Janki Nagar</p>
+                                    <p>Bhandewadi Road, Pardi</p>
+                                    <p>Netaji Nagar, Nagpur</p>
+                                </div>
                             </div>
 
                             <div className="flex gap-3">
-                                <Icon icon="mdi:phone" className="text-primary text-xl" />
-                                <div className="space-y-1">
-                                    <a href="tel:+919372016215" className="block hover:text-primary">
+                                <Icon icon="mdi:phone" className="text-primary text-xl flex-shrink-0" />
+                                <div className="text-sm text-gray-400 space-y-1">
+                                    <a href="tel:+919372016215" className="block hover:text-primary transition">
                                         +91 9372016215
                                     </a>
-                                    <a href="tel:+919172331808" className="block hover:text-primary">
+                                    <a href="tel:+919172331808" className="block hover:text-primary transition">
                                         +91 9172331808
                                     </a>
                                 </div>
                             </div>
 
                             <div className="flex gap-3">
-                                <Icon icon="mdi:email" className="text-primary text-xl" />
+                                <Icon icon="mdi:email" className="text-primary text-xl flex-shrink-0" />
                                 <a
                                     href="mailto:sonkusareclasses@gmail.com"
-                                    className="hover:text-primary break-all"
+                                    className="text-sm text-gray-400 hover:text-primary transition break-all"
                                 >
                                     sonkusareclasses@gmail.com
                                 </a>
+                            </div>
+                        </div>
+
+                        {/* Newsletter Signup */}
+                        <div className="bg-gray-800/50 rounded-lg p-4 border border-gray-700">
+                            <h5 className="text-white font-semibold mb-2 text-sm">Stay Updated</h5>
+                            <p className="text-xs text-gray-400 mb-3">Get latest news and updates</p>
+                            <div className="flex gap-2">
+                                <input
+                                    type="email"
+                                    placeholder="Your email"
+                                    className="flex-1 px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-sm text-white placeholder-gray-400 focus:outline-none focus:border-primary"
+                                />
+                                <button className="px-4 py-2 bg-primary hover:bg-primary/90 text-white rounded-md text-sm font-medium transition">
+                                    Subscribe
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            {/* BOTTOM BAR */}
-            <div className="border-t border-gray-800">
-                <div className="max-w-7xl mx-auto px-4 py-5 flex flex-col md:flex-row items-center justify-between gap-4">
-                    <p className="text-sm text-gray-500 text-center md:text-left">
-                        © {new Date().getFullYear()} Shree's Academy. All Rights Reserved.
-                    </p>
+            {/* Bottom Bar */}
+            <div className="relative border-t border-gray-700/50 bg-gray-900/50 backdrop-blur-sm">
+                <div className="max-w-7xl mx-auto px-4 py-6">
+                    <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+                        <div className="flex flex-col md:flex-row items-center gap-4 text-sm text-gray-400">
+                            <p>© {new Date().getFullYear()} Shree's Academy. All Rights Reserved.</p>
+                            <div className="flex items-center gap-2 text-xs">
+                                <span>Made with</span>
+                                <Icon icon="mdi:heart" className="text-red-500" />
+                                <span>for education</span>
+                            </div>
+                        </div>
 
-                    <div className="flex gap-6 text-sm">
-                        <Link href="/privacy-policy" className="hover:text-primary">
-                            Privacy Policy
-                        </Link>
-                        <Link href="/terms" className="hover:text-primary">
-                            Terms & Conditions
-                        </Link>
+                        <div className="flex gap-6 text-sm">
+                            <Link href="/privacy-policy" className="text-gray-400 hover:text-primary transition">
+                                Privacy Policy
+                            </Link>
+                            <Link href="/terms" className="text-gray-400 hover:text-primary transition">
+                                Terms & Conditions
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            {/* Decorative Elements */}
+            <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -translate-y-32 translate-x-32"></div>
+            <div className="absolute bottom-0 left-0 w-48 h-48 bg-blue-500/5 rounded-full blur-3xl translate-y-24 -translate-x-24"></div>
         </footer>
     )
 }
