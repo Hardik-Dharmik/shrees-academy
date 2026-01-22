@@ -80,7 +80,7 @@ const Header: React.FC = () => {
                                 {/* Social Media Icons */}
                                 <div className='hidden lg:flex items-center gap-2.5'>
                                     <a
-                                        href="https://www.instagram.com/wisdomqualityeducation_/"
+                                        href="https://www.instagram.com/shreeswisdomsacademy/"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className='w-9 h-9 rounded-lg bg-gradient-to-br from-primary/10 to-primary/5 hover:from-primary hover:to-primary/90 flex items-center justify-center transition-all duration-300 group shadow-sm hover:shadow-md hover:scale-110'
@@ -187,7 +187,7 @@ const Header: React.FC = () => {
                                 <p className='text-sm font-semibold text-gray-500 dark:text-gray-400 mb-4 uppercase tracking-wide'>Follow Us</p>
                                 <div className='flex items-center gap-3'>
                                     <a
-                                        href="https://www.instagram.com/wisdomqualityeducation_/"
+                                        href="https://www.instagram.com/shreeswisdomsacademy/"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className='w-11 h-11 rounded-lg bg-gradient-to-br from-primary/10 to-primary/5 hover:from-primary hover:to-primary/90 flex items-center justify-center transition-all duration-300 group shadow-sm hover:shadow-md hover:scale-110'

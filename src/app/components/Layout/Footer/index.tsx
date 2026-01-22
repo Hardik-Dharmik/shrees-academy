@@ -47,7 +47,7 @@ const Footer = () => {
                         {/* Social Media */}
                         <div className="flex gap-3">
                             {[
-                                { icon: 'mdi:instagram', href: 'https://www.instagram.com/wisdomqualityeducation_/', color: 'hover:text-pink-400' },
+                                { icon: 'mdi:instagram', href: 'https://www.instagram.com/shreeswisdomsacademy/', color: 'hover:text-pink-400' },
                                 { icon: 'mdi:whatsapp', href: 'https://wa.me/919372016215', color: 'hover:text-green-400' },
                                 { icon: 'mdi:youtube', href: 'https://www.youtube.com', color: 'hover:text-red-500' },
                                 { icon: 'mdi:facebook', href: 'https://www.facebook.com', color: 'hover:text-blue-500' }
@@ -132,9 +132,13 @@ const Footer = () => {
                             <div className="flex gap-3">
                                 <Icon icon="mdi:map-marker" className="text-primary text-xl flex-shrink-0 mt-1" />
                                 <div className="text-sm text-gray-400">
-                                    <p>Minimata Nagar, Janki Nagar</p>
-                                    <p>Bhandewadi Road, Pardi</p>
-                                    <p>Netaji Nagar, Nagpur</p>
+                                    <p>Opposite Nikalas Mandir, Itwari, Nagpur, Maharashtra.</p>
+                                </div>
+                            </div>
+                            <div className="flex gap-3">
+                                <Icon icon="mdi:map-marker" className="text-primary text-xl flex-shrink-0 mt-1" />
+                                <div className="text-sm text-gray-400">
+                                    <p>Near Railway Crossing, Namdev Nagar, Binaki, Nagpur, Maharashtra.</p>
                                 </div>
                             </div>
 
@@ -142,10 +146,10 @@ const Footer = () => {
                                 <Icon icon="mdi:phone" className="text-primary text-xl flex-shrink-0" />
                                 <div className="text-sm text-gray-400 space-y-1">
                                     <a href="tel:+919372016215" className="block hover:text-primary transition">
-                                        +91 9372016215
+                                        +91 9823225787
                                     </a>
                                     <a href="tel:+919172331808" className="block hover:text-primary transition">
-                                        +91 9172331808
+                                        +91 8446425052
                                     </a>
                                 </div>
                             </div>
@@ -156,13 +160,13 @@ const Footer = () => {
                                     href="mailto:sonkusareclasses@gmail.com"
                                     className="text-sm text-gray-400 hover:text-primary transition break-all"
                                 >
-                                    sonkusareclasses@gmail.com
+                                    shreeacademy@gmail.com
                                 </a>
                             </div>
                         </div>
 
                         {/* Newsletter Signup */}
-                        <div className="bg-gray-800/50 rounded-lg p-4 border border-gray-700">
+                        {/* <div className="bg-gray-800/50 rounded-lg p-4 border border-gray-700">
                             <h5 className="text-white font-semibold mb-2 text-sm">Stay Updated</h5>
                             <p className="text-xs text-gray-400 mb-3">Get latest news and updates</p>
                             <div className="flex gap-2">
@@ -175,7 +179,7 @@ const Footer = () => {
                                     Subscribe
                                 </button>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
@@ -186,21 +190,17 @@ const Footer = () => {
                     <div className="flex flex-col md:flex-row items-center justify-between gap-4">
                         <div className="flex flex-col md:flex-row items-center gap-4 text-sm text-gray-400">
                             <p>© {new Date().getFullYear()} Shree's Academy. All Rights Reserved.</p>
-                            <div className="flex items-center gap-2 text-xs">
-                                <span>Made with</span>
-                                <Icon icon="mdi:heart" className="text-red-500" />
-                                <span>for education</span>
-                            </div>
+                            
                         </div>
 
-                        <div className="flex gap-6 text-sm">
+                        {/* <div className="flex gap-6 text-sm">
                             <Link href="/privacy-policy" className="text-gray-400 hover:text-primary transition">
                                 Privacy Policy
                             </Link>
                             <Link href="/terms" className="text-gray-400 hover:text-primary transition">
                                 Terms & Conditions
                             </Link>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

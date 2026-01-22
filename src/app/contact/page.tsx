@@ -25,10 +25,10 @@ const ContactUs = () => {
                 <div className="container mx-auto px-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
                         {[
-                            { icon: 'mdi:map-marker', title: 'Centers', desc: '3 Locations in Nagpur' },
+                            { icon: 'mdi:map-marker', title: 'Centers', desc: '2 Locations in Nagpur' },
                             { icon: 'mdi:phone', title: 'Call', desc: 'Multiple contact numbers' },
                             { icon: 'mdi:whatsapp', title: 'WhatsApp', desc: '+91 9372016215' },
-                            { icon: 'mdi:email', title: 'Email', desc: 'sonkusareclasses@gmail.com' }
+                            { icon: 'mdi:email', title: 'Email', desc: 'shreeacademy@gmail.com' }
                         ].map((item, i) => (
                             <div
                                 key={i}
@@ -62,13 +62,10 @@ const ContactUs = () => {
                                     Our Locations
                                 </h3>
                                 <p className="text-gray-600 text-sm mb-2">
-                                    1. Minimata Nagar, Near Janki Nagar, Nagpur
+                                    1. Opposite Nikalas Mandir, Itwari, Nagpur, Maharashtra.
                                 </p>
                                 <p className="text-gray-600 text-sm mb-2">
-                                    2. Rarokar Area, Bazar Chowk, Bhandewadi Road, Pardi, Nagpur
-                                </p>
-                                <p className="text-gray-600 text-sm">
-                                    3. Above Alpha Computers, Netaji Nagar, Nagpur
+                                    2. Near Railway Crossing, Namdev Nagar, Binaki, Nagpur, Maharashtra.
                                 </p>
                             </div>
 
@@ -79,11 +76,8 @@ const ContactUs = () => {
                                     Phone Numbers
                                 </h3>
                                 {[
-                                    '+91 9172331808',
-                                    '+91 9372016215',
-                                    '+91 9890388706',
-                                    '+91 9145099632',
-                                    '+91 9922032829'
+                                    '+91 9823225787',
+                                    '+91 8446425052'
                                 ].map((num, i) => (
                                     <a
                                         key={i}
