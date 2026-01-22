@@ -48,7 +48,7 @@ const Footer = () => {
                         <div className="flex gap-3">
                             {[
                                 { icon: 'mdi:instagram', href: 'https://www.instagram.com/shreeswisdomsacademy/', color: 'hover:text-pink-400' },
-                                { icon: 'mdi:whatsapp', href: 'https://wa.me/918446425052?text=Hello%20Shree%20Wisdoms%20Academy%2C%20I%20would%20like%20to%20know%20more%20about%20your%20courses.', color: 'hover:text-green-400' },
+                                { icon: 'mdi:whatsapp', href: 'https://wa.me/918237322119?text=Hello%20Shree%20Wisdoms%20Academy%2C%20I%20would%20like%20to%20know%20more%20about%20your%20courses.', color: 'hover:text-green-400' },
                                 { icon: 'mdi:youtube', href: 'https://www.youtube.com', color: 'hover:text-red-500' },
                                 { icon: 'mdi:facebook', href: 'https://www.facebook.com', color: 'hover:text-blue-500' }
                             ].map((item, i) => (
