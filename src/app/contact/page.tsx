@@ -27,7 +27,7 @@ const ContactUs = () => {
                         {[
                             { icon: 'mdi:map-marker', title: 'Centers', desc: '2 Locations in Nagpur' },
                             { icon: 'mdi:phone', title: 'Call', desc: 'Multiple contact numbers' },
-                            { icon: 'mdi:whatsapp', title: 'WhatsApp', desc: '+91 9372016215' },
+                            { icon: 'mdi:whatsapp', title: 'WhatsApp', desc: '+91 8446425052' },
                             { icon: 'mdi:email', title: 'Email', desc: 'shreeacademy@gmail.com' }
                         ].map((item, i) => (
                             <div
