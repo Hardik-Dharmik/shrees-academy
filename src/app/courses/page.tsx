@@ -1,7 +1,6 @@
-'use client'
-
 import Link from 'next/link'
 import { Icon } from '@iconify/react'
+import { Metadata } from 'next'
 
 interface Course {
     id: string
@@ -69,6 +68,15 @@ const courses: Course[] = [
         bg: 'bg-red-50'
     }
 ]
+
+export const metadata: Metadata = {
+    title: "Courses | Shree's Academy",
+    description:
+        "Explore Shree's Academy courses for board exams and competitive preparation including JEE, NEET, and MHTCET.",
+    alternates: {
+        canonical: "/courses",
+    },
+}
 
 const Courses = () => {
     return (

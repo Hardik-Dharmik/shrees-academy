@@ -36,18 +36,12 @@ const HeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
       onMouseLeave={handleMouseLeave}>
       <Link
         href={item.href}
-        className={`relative text-base flex items-center gap-1.5 font-semibold capitalize transition-all duration-300 group ${
+        className={`relative text-sm flex items-center gap-1.5 font-semibold capitalize tracking-wide px-4 py-2 rounded-full transition-all duration-300 ${
           isActive 
-            ? 'text-primary' 
-            : 'text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary'
+            ? 'bg-primary text-white shadow-[0_10px_20px_-12px_rgba(0,0,0,0.6)]' 
+            : 'text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/10'
         }`}>
         <span className='relative z-10'>{item.label}</span>
-        {isActive && (
-          <span className='absolute -bottom-1 left-0 w-full h-0.5 bg-primary rounded-full'></span>
-        )}
-        {!isActive && (
-          <span className='absolute -bottom-1 left-0 w-0 h-0.5 bg-primary rounded-full group-hover:w-full transition-all duration-300'></span>
-        )}
         {item.submenu && (
           <svg
             xmlns='http://www.w3.org/2000/svg'
@@ -68,7 +62,7 @@ const HeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
       </Link>
       {submenuOpen && (
         <div
-          className={`absolute py-2 left-0 mt-2 w-64 bg-white dark:bg-gray-800 dark:text-white shadow-xl rounded-xl border border-gray-100 dark:border-gray-700 overflow-hidden backdrop-blur-sm`}
+          className={`absolute py-2 left-0 mt-3 w-64 bg-white/95 dark:bg-gray-900/95 dark:text-white shadow-2xl rounded-2xl border border-black/5 dark:border-white/10 overflow-hidden backdrop-blur-xl`}
           data-aos='fade-up'
           data-aos-duration='300'>
           {item.submenu?.map((subItem, index) => (
@@ -78,7 +72,7 @@ const HeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
               className={`block px-5 py-2.5 transition-all duration-200 ${
                 path === subItem.href
                   ? 'bg-primary text-white font-medium'
-                  : 'text-gray-700 dark:text-gray-300 hover:bg-primary/10 hover:text-primary dark:hover:bg-primary/20 dark:hover:text-primary'
+                  : 'text-gray-700 dark:text-gray-300 hover:bg-black/5 hover:text-black dark:hover:bg-white/10 dark:hover:text-white'
               }`}>
               {subItem.label}
             </Link>

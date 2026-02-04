@@ -212,7 +212,7 @@ export async function generateStaticParams() {
     }))
 }
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://shreeacademy.in';
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://shreesacademy.in';
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -241,15 +241,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     }
     
     return {
-        title: `${course.title} Course - Expert Coaching in Nagpur | Shree Academy`,
+        title: `${course.title} Course - Expert Coaching in Nagpur | Shree's Academy`,
         description: `${course.description} ${course.duration}. Expert coaching in Nagpur with proven track record and comprehensive study material.`,
         keywords,
         openGraph: {
             type: 'website',
             locale: 'en_IN',
             url: `${baseUrl}/courses/${slug}`,
-            siteName: 'Shree Academy',
-            title: `${course.title} - Shree Academy`,
+            siteName: "Shree's Academy",
+            title: `${course.title} - Shree's Academy`,
             description: course.description,
             images: [
                 {
@@ -262,7 +262,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         },
         twitter: {
             card: 'summary_large_image',
-            title: `${course.title} - Shree Academy`,
+            title: `${course.title} - Shree's Academy`,
             description: course.description,
             images: [`${baseUrl}${basePath}/images/logo/logo.png`],
         },
@@ -317,14 +317,13 @@ const CourseDetailPage = async ({ params }: PageProps) => {
             "name": "Shree's Academy",
             "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Adarsh colony, Plot no 8, Nara Rd, near Nara Bus Stop, Shambhu Nagar",
+                "streetAddress": "Opposite Nikalas Mandir, Itwari",
                 "addressLocality": "Nagpur",
                 "addressRegion": "Maharashtra",
-                "postalCode": "440014",
                 "addressCountry": "IN"
             },
-            "telephone": "+918055284739",
-            "email": "sonkusareclasses@gmail.com"
+            "telephone": "+919823225787",
+            "email": "shreeacademy@gmail.com"
         },
         "courseCode": course.slug,
         "educationalLevel": course.title.includes('8th') || course.title.includes('9th') || course.title.includes('10th') ? "Secondary" : course.title.includes('11th') || course.title.includes('12th') ? "Higher Secondary" : "Undergraduate",

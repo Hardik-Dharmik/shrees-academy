@@ -1,6 +1,16 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import { Icon } from '@iconify/react'
 import ContactForm from '@/app/components/Contact/Form'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: "Contact Shree's Academy",
+    description:
+        "Get in touch with Shree's Academy for admissions, courses, or academic guidance. Call, WhatsApp, or visit our Nagpur centers.",
+    alternates: {
+        canonical: "/contact",
+    },
+}
 
 const ContactUs = () => {
     return (
@@ -108,7 +118,7 @@ const ContactUs = () => {
                                 Send a <span className="text-primary">Message</span>
                             </h3>
                             <p className="text-sm text-gray-600 mb-6">
-                                Fill out the form and we’ll respond shortly.
+                                Fill out the form and we'll respond shortly.
                             </p>
                             <ContactForm />
                         </div>

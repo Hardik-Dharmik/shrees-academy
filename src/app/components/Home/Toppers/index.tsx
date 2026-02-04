@@ -111,8 +111,8 @@ const Toppers = () => {
                                 <Image
                                     src={topper.image}
                                     alt={topper.name}
-                                    width={96}
-                                    height={96}
+                                    width={200}
+                                    height={200}
                                     className="mx-auto rounded-full border-4 border-white shadow-md object-cover"
                                 />
 
