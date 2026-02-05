@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import { Icon } from '@iconify/react'
+import withBasePath from '@/utils/basePath'
 
 interface Topper {
     id: number
@@ -26,43 +27,74 @@ const toppersByYear: YearToppers[] = [
         toppers: [
             {
                 id: 1,
-                name: 'Priya Sharma',
-                class: '12th Grade',
+                name: 'Mahebeejzara Ansari',
+                class: '12th',
                 rank: 1,
-                percentage: '98.5%',
-                image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop',
+                percentage: '94%',
+                image: withBasePath('/images/toppers_2025/mahebeejzara_ansari_12th_94.jpeg'),
                 subject: 'Science',
-                exam: 'JEE Advanced'
+                // exam: 'HSSC'
             },
             {
                 id: 2,
-                name: 'Rahul Patel',
-                class: '12th Grade',
+                name: 'Himanshu Damke',
+                class: '12th',
                 rank: 2,
-                percentage: '97.8%',
-                image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop',
+                percentage: '90%',
+                image: withBasePath('/images/toppers_2025/himanshu_damke_12th_90.jpeg'),
                 subject: 'Science',
-                exam: 'NEET'
+                // exam: 'NEET'
             },
             {
                 id: 3,
-                name: 'Ananya Desai',
-                class: '12th Grade',
+                name: 'Saniya Chakole',
+                class: '12th',
                 rank: 3,
-                percentage: '96.2%',
-                image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop',
+                percentage: '87%',
+                image: withBasePath('/images/toppers_2025/saniya_chakole_12th_87.jpeg'),
                 subject: 'Science',
-                exam: 'MHTCET'
+                // exam: 'MHTCET'
             },
             {
                 id: 4,
-                name: 'Arjun Singh',
-                class: '10th Grade',
+                name: 'Riya Khapekar',
+                class: '12th',
+                rank: 4,
+                percentage: '86%',
+                image: withBasePath('/images/toppers_2025/riya_khapekar_12th_86.jpeg'),
+                subject: 'Science'
+            },
+            {
+                id: 5,
+                name: 'Harshita Gokhale',
+                class: '10th',
                 rank: 1,
-                percentage: '95.5%',
-                image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop',
-                subject: 'All Subjects'
-            }
+                percentage: '95%',
+                image: withBasePath('/images/toppers_2025/harshita_gokhale_10th_95.jpeg'),
+                subject: 'All Subjects',
+                // exam: 'HSSC'
+            },
+            {
+                id: 6,
+                name: 'Khushi Wadibhasme',
+                class: '10th',
+                rank: 2,
+                percentage: '94%',
+                image: withBasePath('/images/toppers_2025/khushi_wadibhasme_10th_94.jpeg'),
+                subject: 'All Subjects',
+                // exam: 'NEET'
+            },
+            {
+                id: 7,
+                name: 'Manas Dawale',
+                class: '10th',
+                rank: 3,
+                percentage: '93%',
+                image: withBasePath('/images/toppers_2025/manas_dawale_10th_93.jpeg'),
+                subject: 'All Subjects',
+                // exam: 'MHTCET'
+            },
+            
         ]
     },
     {
@@ -303,51 +335,68 @@ const ToppersClient = () => {
                             return (
                                 <div
                                     key={topper.id}
-                                    className={`relative bg-white dark:bg-gray-800 rounded-2xl border-l-4 ${theme.border}
-                                    shadow-sm hover:shadow-xl transition-all p-6 ${theme.bg}`}
+                                    className={`group relative overflow-hidden rounded-3xl border ${theme.border}
+                                    bg-white dark:bg-gray-800 shadow-sm hover:shadow-2xl transition-all`}
                                 >
-                                    {/* Rank & Percentage */}
-                                    <div className="flex items-center justify-between mb-4">
-                                        <span className={`inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm font-semibold ${theme.badge}`}>
-                                            <Icon icon={rankIcon(topper.rank)} />
+                                    {/* Ribbon */}
+                                    <div className="absolute -right-12 top-6 rotate-45">
+                                        <span className={`px-12 py-1.5 text-xs font-semibold tracking-wider uppercase ${theme.badge}`}>
                                             Rank {topper.rank}
                                         </span>
-                                        <span className="text-xl font-bold text-gray-900 dark:text-white">
-                                            {topper.percentage}
-                                        </span>
                                     </div>
 
-                                    {/* Student */}
-                                    <div className="flex items-center gap-4 mb-4">
-                                        <Image
-                                            src={topper.image}
-                                            alt={topper.name}
-                                            width={64}
-                                            height={64}
-                                            className="rounded-full border object-cover"
-                                        />
-                                        <div>
-                                            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                                                {topper.name}
-                                            </h3>
-                                            <p className="text-sm text-gray-500 dark:text-gray-400">
-                                                {topper.class}
-                                            </p>
+                                    <div className="grid grid-cols-1 sm:grid-cols-[140px,1fr] gap-5 p-6">
+                                        {/* Photo */}
+                                        <div className="flex justify-center sm:justify-start">
+                                            <div className="relative">
+                                                <div className="absolute -inset-1 rounded-3xl bg-gradient-to-br from-primary/30 to-transparent blur-sm" />
+                                                <Image
+                                                    src={topper.image}
+                                                    alt={topper.name}
+                                                    width={140}
+                                                    height={140}
+                                                    className="relative rounded-3xl object-cover shadow-lg"
+                                                />
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    {/* Subject & Exam */}
-                                    <div className="flex flex-wrap gap-2 text-sm">
-                                        {topper.subject && (
-                                            <span className="px-3 py-1 rounded-full bg-primary/10 text-primary font-medium">
-                                                {topper.subject}
-                                            </span>
-                                        )}
-                                        {topper.exam && (
-                                            <span className="px-3 py-1 rounded-full bg-blue-100 text-blue-600 font-medium">
-                                                {topper.exam}
-                                            </span>
-                                        )}
+                                        {/* Content */}
+                                        <div className="flex flex-col justify-between">
+                                            <div>
+                                                <p className="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-2">
+                                                    Top Performer
+                                                </p>
+                                                <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">
+                                                    {topper.name}
+                                                </h3>
+                                                <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                                                    {topper.class}
+                                                </p>
+                                            </div>
+
+                                            <div className="mt-5 flex items-center justify-between">
+                                                <div className="flex flex-wrap gap-2 text-sm">
+                                                    {topper.subject && (
+                                                        <span className="px-3 py-1 rounded-full bg-primary/10 text-primary font-medium">
+                                                            {topper.subject}
+                                                        </span>
+                                                    )}
+                                                    {topper.exam && (
+                                                        <span className="px-3 py-1 rounded-full bg-blue-100 text-blue-600 font-medium">
+                                                            {topper.exam}
+                                                        </span>
+                                                    )}
+                                                </div>
+                                                <div className="text-right">
+                                                    <p className="text-[10px] uppercase tracking-wider text-gray-500 dark:text-gray-400">
+                                                        Percentage
+                                                    </p>
+                                                    <p className="text-2xl font-bold text-gray-900 dark:text-white">
+                                                        {topper.percentage}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             )
