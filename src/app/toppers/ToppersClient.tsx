@@ -102,34 +102,64 @@ const toppersByYear: YearToppers[] = [
         toppers: [
             {
                 id: 1,
-                name: 'Sneha Reddy',
-                class: '12th Grade',
+                name: 'Yash Dharmik',
+                class: '12th',
                 rank: 1,
-                percentage: '97.2%',
-                image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop',
+                percentage: '96.2%',
+                image: withBasePath('/images/toppers_2024/yash_dharmik_12_962.jpeg'),
                 subject: 'Science',
-                exam: 'JEE Advanced'
+                // exam: 'JEE Advanced'
             },
             {
                 id: 2,
-                name: 'Vikram Kumar',
-                class: '12th Grade',
+                name: 'Kadambari Ninave',
+                class: '12th',
                 rank: 2,
-                percentage: '96.5%',
-                image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop',
+                percentage: '95.3%',
+                image: withBasePath('/images/toppers_2024/kadambari_ninave_12_953.jpeg'),
                 subject: 'Science',
-                exam: 'NEET'
+                // exam: 'NEET'
             },
             {
                 id: 3,
-                name: 'Meera Joshi',
-                class: '12th Grade',
+                name: 'Muskan Dewani',
+                class: '12th',
                 rank: 3,
-                percentage: '95.8%',
-                image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop',
+                percentage: '88%',
+                image: withBasePath('/images/toppers_2024/muskan_dewani_12_88.jpeg'),
                 subject: 'Science',
-                exam: 'MHTCET'
-            }
+                // exam: 'MHTCET'
+            },
+            {
+                id: 4,
+                name: 'Asim Patel',
+                class: '12th',
+                rank: 4,
+                percentage: '82%',
+                image: withBasePath('/images/toppers_2024/asim_patel_12_82.jpeg'),
+                subject: 'Science',
+                // exam: 'MHTCET'
+            },
+            {
+                id: 5,
+                name: 'Akshara Shete',
+                class: '10th',
+                rank: 1,
+                percentage: '97%',
+                image: withBasePath('/images/toppers_2024/akshara_shete_10_97.jpeg'),
+                subject: 'All Subjects',
+                // exam: 'MHTCET'
+            },
+            {
+                id: 6,
+                name: 'Bhoomi Gumgaokar',
+                class: '10th',
+                rank: 1,
+                percentage: '97%',
+                image: withBasePath('/images/toppers_2024/bhoomi_gumgaokar_10_97.jpeg'),
+                subject: 'All Subjects',
+                // exam: 'MHTCET'
+            },
         ]
     },
     {
