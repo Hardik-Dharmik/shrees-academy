@@ -12,7 +12,7 @@ import ContactForm from './components/Contact/Form'
 export const metadata: Metadata = {
   title: "Shree's Academy | Coaching for School & Competitive Exams",
   description:
-    "Shree's Academy provides focused coaching for school students and competitive exams with experienced faculty, structured learning, and proven results.",
+    "Shree's Academy (Shrees Academy) provides focused coaching for school students and competitive exams with experienced faculty, structured learning, and proven results.",
   alternates: {
     canonical: "/",
   },

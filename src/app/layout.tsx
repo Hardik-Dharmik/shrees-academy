@@ -15,7 +15,7 @@ export const metadata: Metadata = {
         template: "%s | Shree's Academy",
     },
     description:
-        "Shree's Academy offers focused coaching for school students and competitive exams with experienced faculty, structured learning, and proven results.",
+        "Shree's Academy (also known as Shrees Academy) offers focused coaching for school students and competitive exams with experienced faculty, structured learning, and proven results.",
     alternates: {
         canonical: "/",
     },
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
         url: "/",
         title: "Shree's Academy | Coaching for School & Competitive Exams",
         description:
-            "Focused coaching for school students and competitive exams with experienced faculty, structured learning, and proven results.",
+            "Focused coaching for school students and competitive exams with experienced faculty, structured learning, and proven results. Also known as Shrees Academy.",
         siteName: "Shree's Academy",
         locale: "en_IN",
         images: [
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "Shree's Academy | Coaching for School & Competitive Exams",
         description:
-            "Focused coaching for school students and competitive exams with experienced faculty, structured learning, and proven results.",
+            "Focused coaching for school students and competitive exams with experienced faculty, structured learning, and proven results. Also known as Shrees Academy.",
         images: ["/images/logo/logo.png"],
     },
     robots: {
@@ -64,6 +64,7 @@ export default function RootLayout({
         "@context": "https://schema.org",
         "@type": "EducationalOrganization",
         name: "Shree's Academy",
+        alternateName: "Shrees Academy",
         url: baseUrl,
         logo: `${baseUrl}/images/logo/logo.png`,
         contactPoint: [

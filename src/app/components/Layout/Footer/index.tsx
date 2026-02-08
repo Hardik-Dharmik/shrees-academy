@@ -32,7 +32,7 @@ const Footer = () => {
                         <div className="mb-6">
                             <Image
                                 src={withBasePath('/images/logo/logo.png')}
-                                alt="Shree's Academy"
+                                alt="Shree's Academy (Shrees Academy) logo"
                                 width={180}
                                 height={72}
                                 className="h-14 w-auto mb-4"
@@ -41,6 +41,9 @@ const Footer = () => {
                                 Empowering students to achieve excellence in competitive exams through
                                 personalized coaching, innovative teaching methods, and unwavering commitment
                                 to academic success.
+                            </p>
+                            <p className="text-gray-500 leading-relaxed text-xs mt-3">
+                                Also known as Shrees Academy.
                             </p>
                         </div>
 
