@@ -166,35 +166,66 @@ const toppersByYear: YearToppers[] = [
         year: 2023,
         toppers: [
             {
-                id: 1,
-                name: 'Aditya Verma',
-                class: '12th Grade',
+                id: 7,
+                name: 'Mukeshkumar Sahu',
+                class: '12th',
                 rank: 1,
-                percentage: '96.8%',
-                image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop',
-                subject: 'Science',
-                exam: 'JEE Advanced'
-            },
-            {
-                id: 2,
-                name: 'Kavya Nair',
-                class: '12th Grade',
-                rank: 2,
-                percentage: '95.9%',
-                image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop',
-                subject: 'Science',
-                exam: 'NEET'
-            },
-            {
-                id: 3,
-                name: 'Rohan Malhotra',
-                class: '12th Grade',
-                rank: 3,
-                percentage: '95.1%',
-                image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop',
+                percentage: '99.55%ile',
+                image: withBasePath('/images/toppers_2023/mukesh_sahu.jpg'),
                 subject: 'Science',
                 exam: 'MHTCET'
-            }
+            },
+            {
+                id: 8,
+                name: 'Mayuri Rathore',
+                class: '12th',
+                rank: 2,
+                percentage: '99.5%ile',
+                image: withBasePath('/images/toppers_2023/mayuri_rathore.jpg'),
+                subject: 'Science',
+                exam: 'MHTCET'
+            },
+            {
+                id: 9,
+                name: 'Minali Rathore',
+                class: '12th',
+                rank: 3,
+                percentage: '99.2%ile',
+                image: withBasePath('/images/toppers_2023/minali_rathore.jpg'),
+                subject: 'Science',
+                exam: 'MHTCET'
+            },
+            {
+                id: 10,
+                name: 'Mithilesh Sahu',
+                class: '12th',
+                rank: 4,
+                percentage: '97.5%ile',
+                image: withBasePath('/images/toppers_2023/mithilesh_sahu.jpg'),
+                subject: 'Science',
+                exam: 'MHTCET'
+            },
+            {
+                id: 11,
+                name: 'Krishna Anandpara',
+                class: '12th',
+                rank: 1,
+                percentage: '94%',
+                image: withBasePath('/images/toppers_2023/krishna_anandpara.jpg'),
+                subject: 'Science',
+                // exam: 'MHTCET'
+            },
+            
+            {
+                id: 12,
+                name: 'Mukeshkumar Sahu',
+                class: '12th',
+                rank: 2,
+                percentage: '91%',
+                image: withBasePath('/images/toppers_2023/mukesh_sahu.jpg'),
+                subject: 'Science',
+                // exam: 'MHTCET'
+            },
         ]
     },
     {
