@@ -13,6 +13,10 @@ const Banner = () => {
     // Carousel images from public/images/carousal folder
     const carouselImages = [
         {
+            src: withBasePath('/images/carousal/c4.jpeg'),
+            alt: 'Shree\'s Academy - Leading coaching classes in Nagpur for JEE, NEET, and MHTCET preparation'
+        },
+        {
             src: withBasePath('/images/carousal/c1.jpeg'),
             alt: 'Shree\'s Academy - Leading coaching classes in Nagpur for JEE, NEET, and MHTCET preparation'
         },
@@ -76,7 +80,7 @@ const Banner = () => {
                     }
                 `
             }} />
-            <section id='Home' className='relative w-full overflow-hidden pt-20 sm:pt-20'>
+            <section id='Home' className='relative w-full overflow-hidden pt-28 sm:pt-28'>
                 <div className='absolute hidden top-32 left-0 right-0 z-10 text-center px-4'>
                     <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-2xl mb-4'>
                     Shree's Academy
