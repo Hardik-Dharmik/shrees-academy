@@ -13,7 +13,7 @@ const Banner = () => {
     // Carousel images from public/images/carousal folder
     const carouselImages = [
         {
-            src: withBasePath('/images/carousal/c4.jpeg'),
+            src: withBasePath('/images/carousal/c4 (1).jpeg'),
             alt: 'Shree\'s Academy - Leading coaching classes in Nagpur for JEE, NEET, and MHTCET preparation'
         },
         {
