@@ -53,14 +53,6 @@ const facilities: Facility[] = [
         bg: 'bg-pink-50 dark:bg-pink-900/20'
     },
     {
-        id: 6,
-        title: 'Library & Study Room',
-        description: 'Quiet and resourceful study spaces for focused learning.',
-        icon: 'mdi:library-outline',
-        accent: 'from-indigo-500 to-indigo-600',
-        bg: 'bg-indigo-50 dark:bg-indigo-900/20'
-    },
-    {
         id: 7,
         title: 'Exam Preparation',
         description: 'Focused preparation for Boards, JEE, NEET & MHTCET.',

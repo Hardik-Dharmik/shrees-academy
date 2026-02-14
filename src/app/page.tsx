@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <Toppers />
+      {/* <Toppers /> */}
       {/* <Companies />
       <NamesList />
       <Mentor />

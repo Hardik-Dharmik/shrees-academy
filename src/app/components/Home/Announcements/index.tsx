@@ -21,23 +21,14 @@ const Announcements = () => {
             type: 'important',
             title: 'Admissions Open - 2026',
             message:
-                'Admissions are now open for 9th-12th, JEE, NEET & MHTCET batches. Limited seats available.',
+                'Admissions are now open for 8th-12th, JEE, NEET & MHTCET batches. Limited seats available.',
             date: new Date().toISOString(),
             icon: 'mdi:school'
         },
         {
             id: 2,
-            type: 'event',
-            title: 'Free Demo Lectures',
-            message:
-                'Attend free demo lectures and experience our teaching approach before enrolling.',
-            date: new Date(Date.now() + 2 * 86400000).toISOString(),
-            icon: 'mdi:calendar-star'
-        },
-        {
-            id: 3,
             type: 'update',
-            title: 'JEE & NEET 2025 Batches',
+            title: 'JEE & NEET 2026 Batches',
             message:
                 'New intensive preparation batches starting soon with regular mock tests.',
             date: new Date(Date.now() + 7 * 86400000).toISOString(),
@@ -46,21 +37,13 @@ const Announcements = () => {
         {
             id: 4,
             type: 'success',
-            title: 'Outstanding Results - 2024',
+            title: 'Outstanding Results - 2024 & 2025',
             message:
                 'Our students achieved excellent ranks in JEE, NEET & MHTCET examinations.',
             date: new Date(Date.now() - 5 * 86400000).toISOString(),
             icon: 'mdi:trophy-outline'
         },
-        {
-            id: 5,
-            type: 'important',
-            title: 'MHTCET Batch Starting Soon',
-            message:
-                'Dedicated MHTCET batch with complete syllabus coverage and test series.',
-            date: new Date(Date.now() + 14 * 86400000).toISOString(),
-            icon: 'mdi:school-outline'
-        }
+        
     ]
 
     const getBadgeStyle = (type: string) => {
