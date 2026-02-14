@@ -268,7 +268,7 @@ const rankIcon = (rank: number) => {
 
 const ToppersClient = () => {
     const [selectedYear, setSelectedYear] = useState(2025)
-    const years = [2025, 2024, 2023, 2022, 2021]
+    const years = [2025, 2024, 2023];
     const toppers =
         toppersByYear.find(y => y.year === selectedYear)?.toppers || []
 

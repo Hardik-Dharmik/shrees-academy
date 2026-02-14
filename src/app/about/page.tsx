@@ -52,7 +52,7 @@ const AboutUs = () => {
                                     <Icon icon="mdi:school-outline" className="text-2xl text-gray-800 dark:text-gray-200" />
                                 </div>
                                 <div>
-                                    <p className="text-sm uppercase tracking-[0.25em] text-gray-400">Since 2012</p>
+                                    <p className="text-sm uppercase tracking-[0.25em] text-gray-400">Since 2005</p>
                                     <p className="text-lg font-semibold text-gray-900 dark:text-white">Trusted by families across the city</p>
                                 </div>
                             </div>
